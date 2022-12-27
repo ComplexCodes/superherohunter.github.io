@@ -1,0 +1,187 @@
+/* styling the body  */
+body{
+    background-image: url("poster.jpg");
+    background-color: black;
+    background-repeat: round;
+    background-size: cover;
+    overflow-x: hidden;
+}
+/*main-title*/
+.main-title{
+    text-align: center;
+    font-size: larger;
+    color: rgb(36, 245, 245);
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* nav bar */
+nav{
+    position: relative;
+    top:10%;
+    left:20%;
+    display: flex;
+    justify-content: space-between;
+    width:60%;
+}
+/* logo i.e. superhero */
+.app_name{
+    font-size: 40px;
+    background-color: #3e2664;
+    padding:5px;
+    border-radius: 1rem;
+    border: 2px solid blueviolet;
+}
+.app_name a{
+    color:white;
+    text-decoration: none;
+}
+.app_name a:hover{
+    color:yellow;
+}
+
+/* favourite button */
+.favourites button{
+    font-size: 30px;
+    background-color: black;
+    padding:10px;
+    border-radius: 1rem;
+    border: 2px solid blueviolet;
+    
+}
+.favourites button a{
+    color:white;
+    text-decoration: none;
+}
+.favourites button a:hover{
+    color:yellow;
+}
+
+/* search bar */
+.search{
+    position: relative;
+    top:20%;
+    left:20%;
+}
+.search input{
+    border: 4px solid blueviolet;
+    background-color: white;
+    height:8%;
+    width:60%;
+    border-radius: 0.5rem;
+}
+/* div for storing the results */
+#results{
+    position: relative;
+    top:30%;
+    height:100%;
+    
+    
+}
+/* div for storing search results */
+#result
+{
+    height:100%;
+    width:80%;
+    position: relative;
+    left:10%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    text-align: left;
+    color:white;
+    font-size: 2.5rem;
+}
+/* div for storing the details of the hero */
+.hero-container{
+    height:420px;
+    width:300px;
+    background-color: black;
+    border: 2px solid blueviolet;
+    border-radius: 2rem;
+    text-align: center;
+    margin-top: 4%;
+}
+/* hero image */
+.hero_img img{
+    position: relative;;
+    height:68%;
+    width:70%;
+    padding-top: 10%;
+    border-radius: 2rem;
+}
+/* hero name */
+.hero-name{
+    position: relative;
+    color:blueviolet;
+    padding-top: 2%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+/* for notification alert */
+#alert{
+    visibility: hidden;
+    position: fixed;
+    top:2%;
+    left:80%;
+    z-index:100;
+    color:black;
+    font-weight: bold;
+    height:20px;
+    width:fit-content;
+    padding:20px;
+    border-radius: 1rem;
+    transition-duration: 1000ms;
+    font-size: 1.5rem;
+}
+/* if positive notifictaion */
+.success{
+    background-color: rgb(6, 226, 6);
+}
+/* if negative notification */
+.error{
+    background-color: rgb(255, 17, 17);
+}
+/* favourite button */
+#fav_btn{
+    border: none;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding:10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+/* class for male female options */
+.filter_class{
+    position: relative;
+    width:fit-content;
+    cursor: pointer;
+    padding:10px;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color:white;
+    background-color: black;
+    border:2px solid blueviolet;
+}
+/* container for filter class elements */
+#filter{
+    top:27%;
+    position: relative;
+    display: flex;
+    width:50%;
+    left:25%;
+    justify-content: space-around;
+}
+.filter_class a{
+    text-decoration: none;
+    color:white;
+}
+/* loading element */
+#loading{
+    font-size: 2rem;
+    color: white;
+    visibility: hidden;
+    position: fixed;
+    top:0%;
+    left:90%;
+}
